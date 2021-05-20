@@ -1,8 +1,8 @@
 <template>
   <main>
-    <h1>
+    <div class="container">
       CONTENT GOES HERE
-    </h1>
+    </div>
   </main>
 </template>
 
