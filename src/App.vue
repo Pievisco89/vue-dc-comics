@@ -5,6 +5,8 @@
 
     <MainComp />
 
+    <SectionBlue />
+
     <FooterComp />
 
   </div>
@@ -13,6 +15,7 @@
 <script>
 import HeaderComp from '@/components/HeaderComp.vue';
 import MainComp from '@/components/MainComp.vue';
+import SectionBlue from '@/components/SectionBlue.vue';
 import FooterComp from '@/components/FooterComp.vue';
 
 
@@ -21,6 +24,7 @@ export default {
   components: {
     HeaderComp,
     MainComp,
+    SectionBlue,
     FooterComp
   }
 }
