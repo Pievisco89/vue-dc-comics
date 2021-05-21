@@ -31,52 +31,52 @@ export default {
       links:[
         {
           text: 'Characters',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Comics',
-          url: '#',
+          url: 'javascript:void(0)',
           current: true
         },
         {
           text: 'Movies',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Tv',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Games',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Collectibles',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Videos',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Fans',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'News',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
         {
           text: 'Shop',
-          url: '#',
+          url: 'javascript:void(0)',
           current: false
         },
       ]

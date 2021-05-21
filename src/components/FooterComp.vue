@@ -186,6 +186,7 @@ export default {
       background: none;
       border: 2px solid #00a9d9;
       color: white;
+      cursor: pointer;
       text-transform: uppercase;
       padding: 10px 15px;
     }
