@@ -45,30 +45,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section{
-  height: 160px;
-  background-color: #00a9d9;
-  ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  @import '@/assets/style/vars.scss';
 
-    li{
-      margin: 0 2rem;
-      a{
-        display: flex;
-        align-items: center;
-        color: white;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        img{
-          width: 50px;
-          margin: 0 0.6rem;
+  section{
+    height: 160px;
+    background-color: $f-color;
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      li{
+        margin: 0 2rem;
+        a{
+          display: flex;
+          align-items: center;
+          color: white;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          img{
+            width: 50px;
+            margin: 0 0.6rem;
+          }
         }
       }
     }
   }
-}
 
 </style>

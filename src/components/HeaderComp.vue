@@ -13,6 +13,7 @@
           <a 
             :class="{'active' : link.current}"
             :href="link.url"
+            @click="getActiveLink(index)"
           >
             {{link.text}}
           </a>
@@ -81,11 +82,21 @@ export default {
         },
       ]
     }
+  },
+  methods:{
+    getActiveLink(index){
+      this.links.forEach((link) => {
+        link.current = false;
+      });
+      this.links[index].current = true;
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+  @import '@/assets/style/vars.scss';
+
   header{
     display: flex;
     justify-content: space-between;
@@ -104,11 +115,11 @@ export default {
       a{
         text-transform: uppercase;
         color: #464646;
-        &:hover,
+        font-weight: 700;
         &.active{
-          color: #00a9d9;
-          border-bottom: 7px solid #00a9d9;
-          padding-bottom: 45px;
+          color: $f-color;
+          border-bottom: 5px solid $f-color;
+          padding-bottom: 46px;
         }
       }
     }

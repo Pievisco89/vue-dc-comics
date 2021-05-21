@@ -103,7 +103,6 @@
       <div class="container">
         <section>
           <button>Sign-up now!</button>
-
         </section>
         <section>
           <ul>
@@ -140,7 +139,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/style/vars.scss';
+  @import '@/assets/style/vars.scss';
 
   footer{
     height: 480px;
@@ -163,7 +162,8 @@ export default {
       margin-right: 3rem;
       h3{
         color: white;
-        margin: 1.5rem 0;
+        font-weight: 700;
+        margin: 1.3rem 0;
       }
       li{
         margin-bottom: 0.5rem;
@@ -184,11 +184,12 @@ export default {
     }
     button{
       background: none;
-      border: 2px solid #00a9d9;
+      border: 2px solid $f-color;
       color: white;
       cursor: pointer;
       text-transform: uppercase;
-      padding: 10px 15px;
+      font-weight: 700;
+      padding: 0.8rem;
     }
     ul{
       display: flex;
@@ -198,6 +199,7 @@ export default {
       }
       a{
         color: $f-color;
+        font-weight: 700;
         text-decoration: none;
         text-transform: uppercase;
       }

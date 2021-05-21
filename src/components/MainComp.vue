@@ -27,43 +27,45 @@ export default {
       comics
     }
   },
-  mounted(){
-    console.log(comics);
-  }
 }
 
 </script>
 
 <style lang="scss" scoped>
-main{
-  position: relative;
-  text-align: center;
-  background: black;
-  color: white;
-  padding: 0 0.8rem;
-  & > .container{
+  @import '@/assets/style/vars.scss';
+
+  main{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0.8rem 0;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 0 0.8rem;
+    & > .container{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.8rem 0;
+    }
+    h4{
+      position: absolute;
+      top: -5%;
+      left: 10%;
+      background-color: $f-color;
+      padding: 1rem;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    span{
+      display: inline-block;
+      background-color: $f-color;
+      margin-bottom: 2rem;
+      padding: 1rem 5rem;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
   }
-  h4{
-    position: absolute;
-    top: -5%;
-    left: 10%;
-    background-color: #00a9d9;
-    padding: 1rem;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-  span{
-    display: inline-block;
-    background-color: #00a9d9;
-    margin-bottom: 2rem;
-    padding: 1rem 5rem;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-}
 </style>
