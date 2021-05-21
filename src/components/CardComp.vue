@@ -1,9 +1,8 @@
 <template>
   <div>
-    <a href="#">
-      <img :src="card.thumb" :alt="card.series">
-      <h5> {{card.series}} </h5>
-    </a>
+    
+    <img :src="card.thumb" :alt="card.series">
+    <h5> {{card.series}} </h5>
 
   </div>
 </template>
@@ -21,19 +20,21 @@
   div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-basis: calc(100% / 6);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
     img{
       width: 180px;
       height: 185px;
-      margin: 20px 0;
-  }
+      cursor: pointer;
+    }
     h5{
       width: 80%;
       text-transform: uppercase;
       color: white;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
       font-size: 12px;
+      cursor: pointer;
     }
   }
 </style>
