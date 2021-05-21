@@ -3,6 +3,8 @@
     
     <HeaderComp />
 
+    <JumbotronComp />
+
     <MainComp />
 
     <SectionBlue />
@@ -17,6 +19,7 @@ import HeaderComp from '@/components/HeaderComp.vue';
 import MainComp from '@/components/MainComp.vue';
 import SectionBlue from '@/components/SectionBlue.vue';
 import FooterComp from '@/components/FooterComp.vue';
+import JumbotronComp from '@/components/JumbotronComp.vue';
 
 
 export default {
@@ -25,7 +28,8 @@ export default {
     HeaderComp,
     MainComp,
     SectionBlue,
-    FooterComp
+    FooterComp,
+    JumbotronComp
   }
 }
 </script>
@@ -33,5 +37,6 @@ export default {
 <style lang="scss">
 @import '@/assets/style/general.scss';
 @import '@/assets/style/vars.scss';
+@import '@/assets/style/utilities.scss';
 
 </style>
